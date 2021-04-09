@@ -1,0 +1,8 @@
+{% for post in all_posts %}
+
+<a href="{% url 'blog:detail' post.id %}"><h1>{{ post.title }}</h1></a>
+<h5>{{ post.date_posted }}</h5>
+<p1>{{ post.content }}</p1>
+<br>
+<br>
+{% endfor %}
